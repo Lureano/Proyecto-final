@@ -1,0 +1,51 @@
+.marcas-caja {
+    height: 15vh;
+    background-color: rgba(21, 184, 0, 0.562);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marcas-caja__logitech {
+    width: 30vh;
+    opacity: 0.8;  
+}
+
+.marcas-caja__redragon{
+    width: 23vh;
+    opacity: 0.8;
+}
+
+.marcas-caja__hyperx{
+    width: 30vh;
+    opacity: 0.8;
+}
+
+.marcas-caja__spotify{
+    width: 30vh;
+    opacity: 0.8;
+}
+
+
+
+@media (max-width: 425px){
+    .marcas-caja__logitech {
+        width: 12vh;
+        opacity: 0.8;  
+    }
+    
+    .marcas-caja__redragon{
+        width: 10vh;
+        opacity: 0.8;
+    }
+    
+    .marcas-caja__hyperx{
+        width: 12vh;
+        opacity: 0.8;
+    }
+    
+    .marcas-caja__spotify{
+        width: 12vh;
+        opacity: 0.8;
+    }  
+}
