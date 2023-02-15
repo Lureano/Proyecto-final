@@ -1,0 +1,32 @@
+/* ---------------------- inicio header ----------------------*/
+.container-fluid{
+    background-color: rgba(0, 128, 0, 0.404)!important
+}
+
+.navbar{
+    padding: 0;
+}
+
+.nav-link:hover{
+    color: green;
+}
+
+
+.sosba-logo img{
+    width: 2.5vw;
+    border-radius: 50%;
+}
+
+.navbar-toggler:hover{
+    border: 0.2px black solid;
+}
+
+.navbar-text{
+    text-decoration: none;
+}
+
+.navbar-text:hover{
+    color: green;
+}
+
+/* ----------------fin header -----------------------*/
