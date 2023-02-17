@@ -1,155 +1,18 @@
-/* ---------------------TIENDA MAIN------------
------------------------------------------------*/
-
-
-.container {
-    margin: 0;
-    padding: 0;
-    border-radius: 10%;
-    background-color: rgba(3, 3, 3, 0.863);
-    max-width: 100vw; 
-    justify-content: space-evenly;
-    display: grid;
-    grid-template-columns: 24vw 24vw 24vw 24vw;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "camiseta-verde camiseta-blanca camiseta-azul camiseta-roja"
-      "precioV precioB precioA precioR";
-  }
-  
-  .container img{
-    width: 24vw;
-    border-radius: 10%;
-  }
-  
-  .camiseta-verde { grid-area: camiseta-verde; }
-  
-  .camiseta-blanca { grid-area: camiseta-blanca; }
-  
-  .camiseta-azul { grid-area: camiseta-azul; }
-  
-  .camiseta-roja { grid-area: camiseta-roja; }
-  
-  .precioV {
-     grid-area: precioV; 
-    }
-  
-  .precioB { 
-    grid-area: precioB; 
-   }
-  
-  .precioA { 
-    grid-area: precioA;
-   }
-  
-  .precioR { 
-    grid-area: precioR; 
-   }
-  
-.precioA li{
-    list-style: none;
-    color: blue;
-    font-size: 30px;
-}   
-
-.precioB li{
-    list-style: none;
-    color: blue;
-    font-size: 30px;
+.tiendaT{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: $amarillo;
+    letter-spacing: 3px;
+    font-weight: inherit;
 }
-
-.precioR li{
-    list-style: none;
-    color: blue;
-    font-size: 30px;
+.card-title h5{
+    font-family: 'Anton', sans-serif;
+    font-weight: inherit;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
 }
-
-.precioV li{
-    list-style: none;
-    color: blue;
-    font-size: 30px;
-}
-
-@media (max-width: 768px){
-    .precioA li{
-        font-size: 15px;
-    }   
-    
-    .precioB li{
-        font-size: 15px;
-    }
-    
-    .precioR li{
-        font-size: 15px;
-    }
-    
-    .precioV li{
-        font-size: 15px;
-    }         
-}
-
-@media (max-width: 425px){
-    .sosba-logo img{
-        width: 10vw;
-    }
-    .container {  
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "camiseta-verde"
-          "precioV"
-          "camiseta-azul"
-          "precioA"
-          "camiseta-blanca"
-          "precioB"
-          "camiseta-roja"
-          "precioR";
-      }
-      
-      .camiseta-verde { grid-area: camiseta-verde; }
-      
-      .precioV { grid-area: precioV; }
-      
-      .camiseta-azul { grid-area: camiseta-azul; }
-      
-      .precioA { grid-area: precioA; }
-      
-      .camiseta-blanca { grid-area: camiseta-blanca; }
-      
-      .precioB { grid-area: precioB; }
-      
-      .camiseta-roja { grid-area: camiseta-roja; }
-      
-      .precioR { grid-area: precioR; }
-    
-    .container img{
-        width: 50vw;
-    }
-    .precioA li{
-        padding-top: 15px;
-        font-size: 20px;
-    }   
-    
-    .precioB li{
-        padding-top: 15px;
-        font-size: 20px;
-    }
-    
-    .precioR li{
-        padding-top: 15px;
-        font-size: 20px;
-    }
-    
-    .precioV li{
-        padding-top: 15px;
-        font-size: 20px;
-    }
-}
-/* ---------------------TIENDA MAIN------------
------------------------------------------------*/

@@ -1,0 +1,39 @@
+.equipos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: $amarillo;
+    letter-spacing: 3px;
+    font-weight: inherit;
+}
+.card{
+    background-color: $verde-transparente;
+    border: $verde-transparente 2px solid;
+    .list-group-item{
+        background-color: rgba(0, 128, 0, 0.13);
+        border: $verde-transparente 1px solid;
+        color: white;
+        font-weight: 2rem;
+        letter-spacing: 2px;
+    }
+    .card-img-top{
+        border-radius: 6%;
+    }
+    .card-body h5{
+        font-family: 'Anton', sans-serif;
+        font-weight: inherit;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        color: white;
+        text-align: center;
+    }
+    .card-body a{
+        text-decoration: none;
+        color: $verde-oscuro;
+    }
+    .card-body a:hover{
+        color: blue;
+    }
+}

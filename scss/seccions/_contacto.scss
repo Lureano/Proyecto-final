@@ -1,0 +1,65 @@
+/*------FORMULARIO----------*/
+.section__form-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    h1{
+        color: $azul;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem;
+    }
+    .section__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 18rem;
+    }
+    .section__form input, textarea{
+        background-color: $verde-transparente;
+        margin: 10px 0px;
+        width: 100%;
+        border: $verde-oscuro 2px solid;
+        padding: 10px;
+        font-size: 1em;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+    .section__form textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+        font-weight: 100;
+    }
+    input:focus{
+        border: blue 2px solid;
+        background-color: $verde-oscuro;
+    }
+    textarea:focus{
+        border: blue 2px solid;
+        background-color: $verde-oscuro;
+    }
+    #btn{
+        background-image: linear-gradient(45deg, rgba(0, 255, 13, 0.178), rgba(0, 255, 0, 0.116));
+        background-color: #14d12460;
+        color: #fafafa;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        transition: transform .2s;
+    }
+    #btn:hover{
+        cursor: pointer;
+        background-image: linear-gradient(45deg, rgba(4, 0, 255, 0.467), rgba(0, 102, 255, 0.467));
+        transform: scale(1.04);
+    }
+}

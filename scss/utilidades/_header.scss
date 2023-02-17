@@ -1,14 +1,28 @@
 /* ---------------------- inicio header ----------------------*/
 .container-fluid{
-    background-color: rgba(0, 128, 0, 0.404)!important
+    background-color: $verde-transparente!important
 }
 
 .navbar{
     padding: 0;
 }
 
+.nav-item a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    color: rgb(240, 229, 229);
+    font-weight: inherit;
+}
+
+.nav-link{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 .nav-link:hover{
-    color: green;
+    color: $verde-oscuro;
 }
 
 
@@ -22,11 +36,15 @@
 }
 
 .navbar-text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    color: rgb(240, 229, 229);
     text-decoration: none;
 }
 
 .navbar-text:hover{
-    color: green;
+    color: $verde-oscuro;
 }
 
 /* ----------------fin header -----------------------*/

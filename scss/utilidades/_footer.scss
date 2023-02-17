@@ -9,7 +9,7 @@ footer{
 
 .footer__container {
     font-weight: 400;
-    color: blue;
+    color: $azul;
     display: flex;
     align-items: baseline;
 }
@@ -28,7 +28,7 @@ footer{
 }
 
 .footer__span a:hover {
-    color: green;
+    color: $verde-oscuro;
 }
 
 .footer__info {
@@ -37,17 +37,17 @@ footer{
 
 .footer__info li a {
    text-decoration: none;
-   color: blue;
+   color: $azul;
    font-weight: 400; 
 }
 
 .footer__info li a:hover {  
-    color: green;
+    color: $verde-oscuro;
 }
 
 .info__a {
     text-decoration: none;
-    color: blue;
+    color: $azul;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 50px;
@@ -60,17 +60,17 @@ footer{
 
 .footer__equipos li a {
     text-decoration: none;
-    color: blue;
+    color: $azul;
     font-weight: 400;
 }
 
 .footer__equipos li a:hover {
-    color: green;
+    color: $verde-oscuro;
 }
 
 .equipos__a {
     text-decoration: none;
-    color: blue;
+    color: $azul;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 50px;
@@ -82,17 +82,17 @@ footer{
 
 .footer__redes li a {
     text-decoration: none;
-    color: blue;
+    color: $azul;
     font-weight: 400;
 }
 
 .footer__redes li a:hover{
-    color: green;
+    color: $verde-oscuro;
 }
 
 .redes__a {
     text-decoration: none;
-    color: blue;
+    color: $azul;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 50px;

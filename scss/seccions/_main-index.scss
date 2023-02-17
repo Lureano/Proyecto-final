@@ -1,33 +1,28 @@
-/* ------------------------------inicio main ---
-------------------------------------------------*/
-/* -------------------------------INDEX MAIN-----
--------------------------------------------------- */
-
-.nosotros{
-    background-color: rgba(0, 0, 0, 0.452);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sorteo-activo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: $amarillo;
+    letter-spacing: 3px;
+    font-weight: inherit;
+}
+.card-text{
+    background-color: rgba(0, 128, 0, 0.13);        
+    color: white;
+    font-weight: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
-h1{
-    color: blue;
-    text-decoration: underline;
-    font-weight: bold;
+.torneosT{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: $amarillo;
+    letter-spacing: 3px;
+    font-weight: inherit;   
 }
-
-h2{
-    color: blue;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.nosotros p{
-    color: yellow;
-    font-weight: bold;
-}
-  
-/* -------------------------------FIN INDEX MAIN-----
--------------------------------------------------- */
-/* ------------------------------fin main -----
------------------------------------------------*/
