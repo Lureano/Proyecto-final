@@ -1,51 +1,179 @@
-.marcas-caja {
-    height: 15vh;
-    background-color: $verde-transparente;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+.container-logo {
+    margin-top: 10px;
+    background: $verde-transparente;  
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo hyperex logitech redragon"
+      "titulo spotify mastercard monster";
+  }
+  
+  .titulo{ grid-area: titulo;}
+
+  .hyperex { grid-area: hyperex;}
+  
+  .logitech { grid-area: logitech;}
+
+  
+  .redragon { grid-area: redragon; }
+  
+  .spotify { grid-area: spotify; }
+  
+  .mastercard { grid-area: mastercard; }
+  
+  .monster { grid-area: monster; }
+
+.titulo h3{
+    color: black;
+    font-family: $titulos;
+    font-size: 3em;
+    letter-spacing: 2px;
+}  
+.hyperex-logo{
+    width: 200px;
+}
+.logitech-logo{
+    width: 200px;
+}
+.redragon-logo{
+    width: 200px;
+}
+.spotify-logo{
+    width: 200px;
+}
+.mastercard-logo{
+    width: 150px;
+}
+.monster-logo{
+    width: 200px;
 }
 
-.marcas-caja__logitech {
-    width: 30vh;
-    opacity: 0.8;  
-}
-
-.marcas-caja__redragon{
-    width: 23vh;
-    opacity: 0.8;
-}
-
-.marcas-caja__hyperx{
-    width: 30vh;
-    opacity: 0.8;
-}
-
-.marcas-caja__spotify{
-    width: 30vh;
-    opacity: 0.8;
-}
-
-
-
-@media (max-width: 425px){
-    .marcas-caja__logitech {
-        width: 12vh;
-        opacity: 0.8;  
-    }
+@media (max-width:768px){
+        .container-logo { 
+            align-items: center; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "titulo titulo titulo"
+              "hyperex logitech redragon"
+              "spotify mastercard monster";
+          }
+      
+      .titulo{ grid-area: titulo;}
     
-    .marcas-caja__redragon{
-        width: 10vh;
-        opacity: 0.8;
-    }
+      .hyperex { grid-area: hyperex;}
+      
+      .logitech { grid-area: logitech;}
     
-    .marcas-caja__hyperx{
-        width: 12vh;
-        opacity: 0.8;
-    }
+      
+      .redragon { grid-area: redragon; }
+      
+      .spotify { grid-area: spotify; }
+      
+      .mastercard { grid-area: mastercard; }
+      
+      .monster { grid-area: monster; }
     
-    .marcas-caja__spotify{
-        width: 12vh;
-        opacity: 0.8;
+    .titulo h3{
+        color: black;
+        font-family: $titulos;
+        font-size: 3em;
+        letter-spacing: 2px;
     }  
+    .hyperex-logo{
+        width: 100px;
+    }
+    .logitech-logo{
+        width: 100px;
+    }
+    .redragon-logo{
+        width: 100px;
+    }
+    .spotify-logo{
+        width: 100px;
+    }
+    .mastercard-logo{
+        width: 70px;
+    }
+    .monster-logo{
+        width: 100px;
+    }
 }
+@media (max-width:425px){
+    .container-logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "titulo titulo"
+          "hyperex logitech"
+          "redragon spotify"
+          "mastercard monster";
+      }
+      
+      .hyperex { grid-area: hyperex; }
+      
+      .logitech { grid-area: logitech; }
+      
+      .redragon { grid-area: redragon; }
+      
+      .spotify { grid-area: spotify; }
+      
+      .mastercard { grid-area: mastercard; }
+      
+      .monster { grid-area: monster; }
+      
+      .titulo { grid-area: titulo; }
+      
+      
+      .titulo{grid-area: titulo;}
+
+      .hyperex { grid-area: hyperex; }
+      
+      .logitech { grid-area: logitech; }
+      
+      .redragon { grid-area: redragon; }
+      
+      .spotify { grid-area: spotify; }
+      
+      .mastercard { grid-area: mastercard; }
+      
+      .monster { grid-area: monster; }
+    
+      .hyperex-logo{
+        width: 100px;
+    }
+    .logitech-logo{
+        width: 100px;
+    }
+    .redragon-logo{
+        width: 100px;
+    }
+    .spotify-logo{
+        width: 100px;
+    }
+    .mastercard-logo{
+        width: 70px;
+    }
+    .monster-logo{
+        width: 100px;
+    }
+    .titulo h3{
+        font-size: 2em;
+        letter-spacing: 1px;
+    }  
+}  
