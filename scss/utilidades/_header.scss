@@ -1,4 +1,5 @@
 /* ---------------------- inicio header ----------------------*/
+
 .container-fluid{
     background-color: $verde-transparente!important
 }
@@ -45,6 +46,7 @@
 
 .navbar-text:hover{
     color: $verde-oscuro;
+    transition: .2s;
 }
 
 /* ----------------fin header -----------------------*/

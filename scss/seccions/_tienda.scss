@@ -1,18 +1,90 @@
-.tiendaT{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: $amarillo;
-    letter-spacing: 3px;
-    font-weight: inherit;
+.tienda{
+    max-width: 100vw;
+    height: 100vh;
+    .tienda__container{
+        width: 100%;
+        // height: 70vh;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.336);
+        backdrop-filter: blur(7px);
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    .tienda__msg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tienda__subtitulo{
+        font-family: $info-textos;
+        text-align: center;
+        font-size: 0.9em;
+        color: #ffffffe5;
+    }
+    .tienda__titulo{
+        font-family: $titulos;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        flex-direction: column;
+        margin-left: 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .tienda__titulo strong{
+        text-align: center;
+        font-size: 4em;
+        font-family: $titulos;
+        color: $amarillo;
+    } 
+    .tienda__articulos{
+        display: flex;
+        padding: 50px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .tienda__articulos__art{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+    .tienda__articulos__art:hover{
+        transform: scale(1.1);
+        transition: .3s;
+    }
+    .tienda__articulos__art img{
+        width: 350px;
+        height: 350px;
+        border: 1.5px solid black;
+        box-shadow: 6px 6px 5px grey;
+        border-radius: 10px;
+    }
+    .tienda__articulos__art p{
+        padding-top: 10px;
+        text-align: center;
+        color: #fff;
+        font-family: $info-textos;
+    }
+    .tienda__articulos::-webkit-scrollbar{
+        background: none;
+    }
+    .tienda__articulos::-webkit-scrollbar-thumb{
+        background: $verde-transparente;
+        border-radius: 10px;
+    }
+    @media (max-width: 425px){
+        .tienda__container{
+            display: block;
+            overflow: scroll;
+        }
+        .tienda__articulos img{
+            width: 150px;
+            height: 150px;
+        }
+    }
 }
-.card-title h5{
-    font-family: 'Anton', sans-serif;
-    font-weight: inherit;
-    font-size: 1.7rem;
-    letter-spacing: 2px;
-    color: white;
-    text-align: center;
-}
+
