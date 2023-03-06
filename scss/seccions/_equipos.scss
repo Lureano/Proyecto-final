@@ -1,39 +1,358 @@
-.equipos{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: $amarillo;
-    letter-spacing: 3px;
-    font-weight: inherit;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.card{
-    background-color: $verde-transparente;
-    border: $verde-transparente 2px solid;
-    .list-group-item{
-        background-color: rgba(0, 128, 0, 0.13);
-        border: $verde-transparente 1px solid;
-        color: white;
-        font-weight: 2rem;
-        letter-spacing: 2px;
+
+.titulo-equipos{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    font-size: 50px;
+    color: #fff;
+    font-family: $titulos;
+}
+.titulo-equipos strong{
+    padding-left: 10px;
+    color: $amarillo;
+    font-family: $titulos;
+}
+.subtitulo-equipos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: $info-textos;
+}
+
+
+.container-equipos {  
+    margin: auto;
+    background: rgba(0, 0, 0, 0.514);
+    max-width: 95vw;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 2px solid black;
+    
+    display: grid;
+    justify-items: center;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "lol valo cs-go"
+      "fornite fifa rocket";
+  }
+  
+  .lol { grid-area: lol; }
+  
+  .valo { grid-area: valo; }
+  
+  .cs-go { grid-area: cs-go; }
+  
+  .fornite { grid-area: fornite; }
+  
+  .fifa { grid-area: fifa; }
+  
+  .rocket { grid-area: rocket; }
+
+.lol{
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=5283&vertical=1");
+    background-size: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    filter: grayscale(1.0);
+}
+.lol__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.lol__content h2{
+    text-align: center;
+    color: rgba(229, 255, 0, 0.836);
+    margin: 10px 0;
+}
+.lol__content a{
+    color: rgba(229, 255, 0, 0.836);
+}
+
+.lol__content:hover {
+    opacity: 1;
+    filter: grayscale(0.0);
+}
+.lol:hover  {
+    filter: grayscale(0.0);
+}
+.valo{
+    background-image: url(https://wallpaperaccess.com/full/4962535.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    filter: grayscale(1.0);
+}
+.valo__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.valo__content h2{
+    text-align: center;
+    color: rgba(221, 0, 0, 0.836);
+    margin: 10px 0;
+}
+.valo__content a{
+    color: rgba(221, 0, 0, 0.836);
+}
+
+.valo__content:hover {
+    opacity: 1;
+    filter: grayscale(0.0);
+}
+.valo:hover  {
+    filter: grayscale(0.0);
+}
+.cs-go{
+    background-image: url("https://i.pinimg.com/236x/f3/19/52/f319529c802e4797e1b1d4b7a1aba6f8.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    filter: grayscale(1.0);
+}
+.cs-go__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.cs-go__content h2{
+    text-align: center;
+    color: rgba(252, 252, 252, 0.836);
+    margin: 10px 0;
+}
+.cs-go__content a{
+    color: rgba(252, 252, 252, 0.836);
+}
+
+.cs-go__content:hover {
+    opacity: 1;
+    filter: grayscale(0.0);
+}
+.cs-go:hover  {
+    filter: grayscale(0.0);
+}
+
+.fornite{
+    background-image: url("https://i.pinimg.com/originals/62/65/45/6265454b6323ba92dde1915cff5f9a6d.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    filter: grayscale(1.0);
+}
+.fornite__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.fornite__content h2{
+    text-align: center;
+    color: rgba(51, 255, 0, 0.836);
+    margin: 10px 0;
+}
+.fornite__content a{
+    color: rgba(51, 255, 0, 0.836);
+}
+
+.fornite__content:hover {
+    opacity: 1;
+    filter: grayscale(0.0);
+}
+.fornite:hover  {
+    filter: grayscale(0.0);
+}
+.fifa{
+    background-image: url("https://wallpapershome.com/images/wallpapers/fifa-19-2160x3840-e3-2018-screenshot-8k-19341.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    filter: grayscale(1.0);
+}
+.fifa__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.fifa__content h2{
+    text-align: center;
+    color: rgba(17, 0, 255, 0.836);
+    margin: 10px 0;
+}
+.fifa__content a{
+    color: rgba(17, 0, 255, 0.836);
+}
+
+.fifa__content:hover {
+    opacity: 1;
+    filter: grayscale(0.0);
+}
+.fifa:hover  {
+    filter: grayscale(0.0);
+}
+.rocket{
+    background-image: url("https://e0.pxfuel.com/wallpapers/620/305/desktop-wallpaper-rocket-league-console-automotive-design-pc-car-videogame-screen-rl-viral-rocketleague-fyp-thumbnail.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+    filter: grayscale(1.0);
+}
+.rocket__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.rocket__content h2{
+    text-align: center;
+    color: rgba(0, 255, 242, 0.836);
+    margin: 10px 0;
+}
+.rocket__content a{
+    color: rgba(0, 255, 242, 0.836);
+}
+
+.rocket__content:hover {
+    opacity: 1;
+    filter: grayscale(0.0);
+}
+.rocket:hover  {
+    filter: grayscale(0.0);
+}
+
+@media (max-width: 1360px){
+    .container-equipos {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "lol valo"
+          "cs-go fornite"
+          "fifa rocket";
+      }
+      
+      .lol { grid-area: lol; }
+      
+      .valo { grid-area: valo; }
+      
+      .cs-go { grid-area: cs-go; }
+      
+      .fornite { grid-area: fornite; }
+      
+      .fifa { grid-area: fifa; }
+      
+      .rocket { grid-area: rocket; }
+      
+}
+@media (max-width: 875px){
+    .container-equipos {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "lol"
+          "valo"
+          "cs-go"
+          "fornite"
+          "fifa"
+          "rocket";
+      }
+      
+      .lol { grid-area: lol; }
+      
+      .valo { grid-area: valo; }
+      
+      .cs-go { grid-area: cs-go; }
+      
+      .fornite { grid-area: fornite; }
+      
+      .fifa { grid-area: fifa; }
+      
+      .rocket { grid-area: rocket; }
+      
+}
+@media (max-width: 425px){
+    .titulo-equipos{
+        font-size: 30px;
     }
-    .card-img-top{
-        border-radius: 6%;
-    }
-    .card-body h5{
-        font-family: 'Anton', sans-serif;
-        font-weight: inherit;
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-        color: white;
-        text-align: center;
-    }
-    .card-body a{
-        text-decoration: none;
-        color: $verde-oscuro;
-    }
-    .card-body a:hover{
-        color: blue;
+    .subtitulo-equipos{
+        font-size: 15px;
     }
 }

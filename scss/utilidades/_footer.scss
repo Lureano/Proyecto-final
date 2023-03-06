@@ -1,7 +1,7 @@
 /* inicio del footer */
 footer{
     display: flex;
-    height: 200px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.76);
     justify-content: space-evenly;
     align-items: center;
@@ -55,7 +55,8 @@ footer{
 
 .footer__equipos {
     list-style: none;
-    margin-right: 40px;
+    margin-bottom: 0;
+    padding-top: 20px;
 }
 
 .footer__equipos li a {
@@ -111,6 +112,7 @@ footer{
         flex-direction: column;
         width: 100vw;
         align-items: center;
+        text-align: center;
     }
     .footer__container ul{
         display: flex;

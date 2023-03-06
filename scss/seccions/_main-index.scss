@@ -1,12 +1,39 @@
-.fornite{
-    width: 80vw;
-    height: 80vh;
+
+.sorteo-activo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: $amarillo;
+    letter-spacing: 3px;
+    font-weight: inherit;
 }
-.valo{
-    width: 80vw;
-    height: 80vh;
+.card{
+    height: 580px;
+    background: $verde-transparente;
+    border: 1px solid $verde-oscuro;
+    box-shadow: 8px 8px 5px $verde-transparente;
 }
-.lol{
-    width: 80vw;
-    height: 80vh;
+.card-body{
+    align-items: center;
+    text-align: center;
+}
+.card-text{
+    background-color: rgba(0, 128, 0, 0.13);        
+    color: white;
+    font-weight: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.torneosT{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: $amarillo;
+    letter-spacing: 3px;
+    font-weight: inherit;
 }
